@@ -1,9 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+/* Prevent selection on all clickable elements */
+* {
+  -webkit-tap-highlight-color: transparent; /* Removes mobile tap highlight */
+  user-select: none; /* Prevents text selection */
+  outline: none; /* Removes focus outline */
+  background: transparent; /* Removes any background on click */
+}
+
+/* Specifically targeting commonly interactive elements */
+a, button, input, textarea, i, img {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  outline: none;
+  background: transparent;
+}
+
+/* For links and buttons on focus or active */
+a:focus, a:active, button:focus, button:active, input:focus, input:active, textarea:focus, textarea:active, i:focus, i:active, img:focus, img:active {
+  outline: none;
+  background: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Spartan", sans-serif;
+  -webkit-user-select: none; /* For Safari */
+  -moz-user-select: none;    /* For Firefox */
+  -ms-user-select: none;     /* For Internet Explorer */
+  user-select: none;     
 }
 html {
   scroll-behavior: smooth;
@@ -231,6 +260,9 @@ body {
 #product1 .pro:hover{
   box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
 }
+#product1 p{
+  color: #606063;
+}
 #product1 .pro img{
   width: 100%;
   border-radius: 20px;
@@ -413,6 +445,8 @@ body {
   color: #ffbd27;
 }
 #newsletter input{
+  background-color: #fff;
+  color: #000;
   height: 3.125rem;
   padding: 0 1.25em;
   font-size: 14px;
@@ -1006,6 +1040,23 @@ footer .copyright p{
   #banner{
     width: 100%;
     margin: 10px 0 10px 0;
+    height: 28vh;
+  }
+  #banner h4{
+    color: #fff;
+    font-size: 16px;
+  }
+  #banner h2{
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0;
+  }
+  #banner h2 span{
+    color: #ef3636;
+  }
+  #banner button:hover{
+    background-color:#088178;
+    color: #fff;
   }
   #newsletter,#banner3,#sm-banner,#header,footer{
     width: 100%;
