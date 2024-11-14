@@ -978,6 +978,7 @@ footer .copyright p{
     overflow-x: hidden; 
   }
   #hero h2 {
+    margin-right: 120px;
     font-size: 34px;
   }
   #hero h1 {
