@@ -24,13 +24,13 @@
 
 ---
 
-## 🎨 Screenshots
+## 🎨 Screenshot
 
 <!-- Replace with actual screenshots in docs/screenshots/ -->
 
-| Home                               | Shop                               | Cart                               |
-| ---------------------------------- | ---------------------------------- | ---------------------------------- |
-| ![Home](docs/screenshots/home.png) | ![Shop](docs/screenshots/shop.png) | ![Cart](docs/screenshots/cart.png) |
+| Home                               |
+| ---------------------------------- |
+| ![Home](home.png) |
 
 ---
 
